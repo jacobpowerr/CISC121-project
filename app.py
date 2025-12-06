@@ -47,9 +47,6 @@ app = gr.Interface(
     description="Enter a list of numbers and a target value to see how binary search works."
 )
 
-
-# -----------------------------
 # Launch App
-# -----------------------------
 if __name__ == "__main__":
     app.launch()
