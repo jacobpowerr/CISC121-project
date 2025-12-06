@@ -26,7 +26,7 @@ def binary_search(arr, target):
 def run_binary_search(list_input, target):
     try:
         # Convert input string into list of integers
-        arr = list(map(int, list_input.split(",")))
+        arr = [int(x.strip()) for x in list_input.split(",") if x.strip() != ""]
         arr.sort()  # Ensure list is sorted for binary search
 
         result = binary_search(arr, target)
@@ -53,6 +53,7 @@ app = gr.Interface(
     title="Binary Search Simulator",
     description="Enter a list of numbers and a target value to see how binary search works."
 )
+
 
 # -----------------------------
 # Launch App

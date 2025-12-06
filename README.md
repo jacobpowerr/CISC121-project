@@ -4,12 +4,26 @@ emoji: 🔍
 colorFrom: blue
 colorTo: green
 sdk: gradio
-sdk_version: "4.44.0"
+sdk_version: "3.50.2"
 app_file: app.py
 pinned: false
 ---
 
 # Binary Search Simulator
+
+---
+
+## Hugging Face Link
+https://huggingface.co/spaces/jacobpower/binary-search-app
+
+---
+
+## Author & Acknowledgment
+Author: Jacob Power  
+Course: CISC 121  
+UI Library: Gradio  
+Acknowledgment: Hugging Face and Gradio documentation
+
 
 ## Demo Screenshot of Test
 ![alt text](image.png)
@@ -45,11 +59,10 @@ pinned: false
 
 ## Steps to Run
 
-1. Clone the GitHub repository  
+1. Clone the GitHub repository
 2. Install the required library:
-   ```bash
    pip install gradio
 3. Run the application:
-    python app.py
-4. Enter a comma-seperated list of numbers and a target value
+   python app.py
+4. Enter a comma-separated list of numbers and a target value
 5. Click submit to view the results
