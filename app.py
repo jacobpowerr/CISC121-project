@@ -1,8 +1,6 @@
 import gradio as gr
 
-# -----------------------------
 # Binary Search Algorithm
-# -----------------------------
 def binary_search(arr, target):
     low = 0
     high = len(arr) - 1
@@ -19,10 +17,7 @@ def binary_search(arr, target):
 
     return -1
 
-
-# -----------------------------
 # Wrapper for Gradio UI
-# -----------------------------
 def run_binary_search(list_input, target):
     try:
         # Convert input string into list of integers
@@ -40,9 +35,7 @@ def run_binary_search(list_input, target):
         return "Invalid input. Please enter numbers separated by commas."
 
 
-# -----------------------------
 # Gradio Interface
-# -----------------------------
 app = gr.Interface(
     fn=run_binary_search,
     inputs=[
